@@ -87,12 +87,13 @@ export default {
   components: {},
   data() {
     return {
+      //todo
       promotionStartTime:'',
       promotionDuration:0,
       promotionCount:0,
       promotionValue:1,
       dialogVisible: false,
-      baseURL: 'http://localhost:8080/QRCodeMall/',
+      baseURL: 'http://云主机ip:32557/QRCodeMall/',
       goodsList: [],
       goodsName: '',
       goodsPrice: undefined,

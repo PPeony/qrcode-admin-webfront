@@ -65,7 +65,8 @@
         components: {},
         data() {
             return {
-                baseURL: 'http://localhost:8080/QRCodeMall/',
+              //todo
+                baseURL: 'http://云主机ip:32557/QRCodeMall/',
                 goodsList: [],
                 goodsName: '',
                 goodsPrice: undefined,

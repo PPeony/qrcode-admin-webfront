@@ -1,15 +1,18 @@
 import axios from 'axios';
 let node_base_url;
 if (process.env.NODE_ENV == 'development') {
-  node_base_url = 'http://localhost:8090/api';
+  // node_base_url = 'http://localhost:32557/api';
+    node_base_url = 'http://云主机ip:8080/api';
 } else {
   //node_base_url = 'http://www.huiazir.com:9001/api';
-  node_base_url = 'http://localhost:8090/api';
+  // node_base_url = 'http://localhost:32557/api';
+    node_base_url = 'http://云主机ip:8080/api';
 }
 
 let server = axios.create({
-  // baseURL: 'https://stu.hrbkyd.com/QRCodeMall', //请求url
-    baseURL : 'http://localhost:8090/QRCodeMall',
+    //todo
+  // baseURL: 'http://localhost:32557/QRCodeMall', //请求url
+    baseURL : 'http://云主机ip:8080/QRCodeMall',
   timeout: 5000, //超时处理
   withCredentials: true //是否跨域
 });
